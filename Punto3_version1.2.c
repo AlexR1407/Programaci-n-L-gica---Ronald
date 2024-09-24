@@ -21,11 +21,15 @@ int main(){
     scanf("%f",&temp_2);
     printf("Ingresar hora(formato entero de 4 digitos): ");
     scanf("%d",&hora_2);
+    min_2 = hora_2 % 100;
+    hora_2 = hora_2 / 100;
 
     printf("\nIngresar tercer registro de temperatura: ");
     scanf("%f",&temp_3);
     printf("Ingresar hora(formato entero de 4 digitos): ");
     scanf("%d",&hora_3);
+    min_3 = hora_3 % 100;
+    hora_3 = hora_3 / 100;
 
     //a. Promedio de temperatura
     prom_ = (temp_1 + temp_2 + temp_3) / 3;
@@ -40,9 +44,11 @@ int main(){
     }else if (temp_2>prom_) // Se llama condición anidada
         {
             printf("\nTemperatura de %.1f es mayor al promedio de %.1f",temp_2,prom_);
+            printf("\nFue registrado a las %d:%d",hora_2,min_2);
         }else
             {
                 printf("\nTemperatura de %.1f es mayor al promedio de %.1f",temp_3,prom_);
+                printf("\nFue registrado a las %d:%d",hora_3,min_3);
             }
     
     return 0;
