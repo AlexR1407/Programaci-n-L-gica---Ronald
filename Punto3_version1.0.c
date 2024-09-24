@@ -21,7 +21,7 @@ int main(){
     //a. Promedio de temperatura
     prom_ = (temp_1 + temp_2 + temp_3) / 3;
 
-    printf("\nEl promedio de temperatura es: %.2f",prom_);
+    printf("\nEl promedio de temperatura es: %.1f",prom_);
     
     //b. Temperatura mayor al promedio
     if (temp_1>prom_)
